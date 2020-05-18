@@ -13,6 +13,4 @@ def create_ij(n):
 n = int(input())
 m = create_ij(n)
 for i in m:
-    for number in i:
-        print(number, end=' ')
-    print()
+    print(' '.join(list(map(str, i))))

@@ -6,5 +6,5 @@ def expected_award(array):
     return awards.dot(array).sum()
 
 
-a = np.array(list(map(float, input().split())))
+a = np.array(list(map(float, input().strip().split())))
 print(expected_award(a))

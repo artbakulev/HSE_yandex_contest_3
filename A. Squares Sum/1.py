@@ -6,5 +6,5 @@ def get_squares(array: np.array):
     return np.square(array[array_filter]).sum()
 
 
-a = np.array(list(map(int, input().split(' '))))
+a = np.array(list(map(int, input().strip().split(' '))))
 print(get_squares(a))

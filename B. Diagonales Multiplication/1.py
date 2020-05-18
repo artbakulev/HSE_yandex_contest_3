@@ -13,7 +13,7 @@ with open('input.txt', 'r') as f:
 
 matrix = []
 for line in lines:
-    matrix.append(list(map(float, line.split())))
+    matrix.append(list(map(float, line.strip().split())))
 matrix = np.array(matrix)
 
 print(prod_upper_avg_diagonal(matrix))
