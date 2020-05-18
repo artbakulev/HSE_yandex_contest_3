@@ -12,5 +12,11 @@ def create_ij(n):
 
 n = int(input())
 m = create_ij(n)
+result = ''
 for i in m:
-    print(' '.join(list(map(str, i))))
+    for num in i:
+        result += str(num) + ' '
+    result = result.rstrip()
+    result += '\n'
+result = result.strip()
+print(result)

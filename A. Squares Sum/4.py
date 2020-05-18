@@ -1,4 +1,4 @@
-import numpy
+import numpy as np
 
 
 def get_squares(arr):
@@ -6,8 +6,4 @@ def get_squares(arr):
     for i in arr:
         if i > 0:
             result += i**2
-    return result
-
-
-a = numpy.array(list(map(int, input().split(' '))))
-print(get_squares(a))
+    return np.array(result)
